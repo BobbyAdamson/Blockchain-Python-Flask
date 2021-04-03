@@ -11,6 +11,7 @@ Runs on `http://0.0.0.0:1337`
 ## Endpoints
 
 [GET] `/mine` - Prompts the program to run the proof of work algorithm, and when it finds the correct proof, claim the reward and add a new block to the chain
+
 [GET] `/chain` - Gets the full chain
 
 ### Structure
