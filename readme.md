@@ -14,6 +14,10 @@ Runs on `http://0.0.0.0:1337`
 
 [GET] `/chain` - Gets the full chain
 
+## To do:
+
+Step 4. Consensus
+
 ### Structure
 
 - `Project related` - Directly related to the blockchain being built
