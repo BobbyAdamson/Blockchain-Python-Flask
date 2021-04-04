@@ -6,7 +6,7 @@ Following this guide: https://hackernoon.com/learn-blockchains-by-building-one-1
 
 In project directory run `python Project\ related/FlaskApp.py`
 
-Runs on `http://0.0.0.0:1337`
+You can change the port you run on in the `run` method at the end of `FlaskApp.py`
 
 ## Endpoints
 
@@ -14,9 +14,15 @@ Runs on `http://0.0.0.0:1337`
 
 [GET] `/chain` - Gets the full chain
 
+[POST] `/nodes/register` - Send an array of node addresses to register with the other nodes
+
+[GET] `/nodes/resolve` - Triggers consensus algorithm to ensure the longest chain among all registered nodes has authority
+
 ## To do:
 
-Step 4. Consensus
+- Transaction validation
+- Automatic consensus trigger on mining
+- Use python conventions (I am not very familiar with python as of this project)
 
 ### Structure
 
