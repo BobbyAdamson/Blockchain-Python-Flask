@@ -7,7 +7,7 @@ Following this guide: https://hackernoon.com/learn-blockchains-by-building-one-1
 Ensure python3 and pip3 are installed. Install required modules:
 `pip3 install flask requests`
 
-In project directory run `FLASK_APP=FlaskApp.py flask run --port [YOUR PORT]`
+In project directory run `FLASK_APP=Project\ related/FlaskApp.py flask run --port [YOUR PORT]`
 
 You can change the port you run on in the `run` method at the end of `FlaskApp.py`
 
