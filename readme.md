@@ -4,7 +4,10 @@ Following this guide: https://hackernoon.com/learn-blockchains-by-building-one-1
 
 ## To run:
 
-In project directory run `python Project\ related/FlaskApp.py`
+Ensure python3 and pip3 are installed. Install required modules:
+`pip3 install flask requests`
+
+In project directory run `FLASK_APP=FlaskApp.py flask run --port [YOUR PORT]`
 
 You can change the port you run on in the `run` method at the end of `FlaskApp.py`
 
@@ -14,7 +17,7 @@ You can change the port you run on in the `run` method at the end of `FlaskApp.p
 
 [GET] `/chain` - Gets the full chain
 
-[POST] `/nodes/register` - Send an array of node addresses to register with the other nodes
+[POST] `/nodes/register` - Send an array of node addresses to register with the other nodes. Nest the array in an object accessed by a `nodes` key.
 
 [GET] `/nodes/resolve` - Triggers consensus algorithm to ensure the longest chain among all registered nodes has authority
 
